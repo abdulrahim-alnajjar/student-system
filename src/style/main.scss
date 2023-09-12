@@ -1,0 +1,87 @@
+// Variables
+:root {
+  --bs-primary: #7b00ff !important;
+  --bs-hover: #dabef8 !important;
+}
+
+// Global
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+  direction: rtl;
+  position: relative;
+}
+
+input {
+  border: none;
+  &:focus {
+    outline: none;
+    &::placeholder {
+      color: transparent;
+    }
+  }
+}
+
+select {
+  outline: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  margin: 0 !important;
+  list-style: none;
+}
+
+.btn {
+  width: fit-content;
+  &:hover {
+    background: var(--bs-hover);
+  }
+}
+
+table {
+  caption-side: top;
+}
+
+.floating-box {
+  width: 75%;
+  position: absolute;
+  right: 50%;
+  top: 100px;
+  transform: translate(50%);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: var(--bs-primary);
+  display: flex;
+  flex-direction: column;
+}
+
+// Global Classes
+.svg-light {
+  fill: #fff !important;
+}
+.svg-success {
+  fill: #198754 !important;
+}
+.svg-danger {
+  fill: #dc3545 !important;
+}
+.svg-warning {
+  fill: #ffc107 !important;
+}
+.ltr-dir {
+  direction: ltr !important;
+  text-align: end;
+}
+.text-primary {
+  color: var(--bs-primary) !important;
+}
